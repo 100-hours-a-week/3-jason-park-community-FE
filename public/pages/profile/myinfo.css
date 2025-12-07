@@ -1,0 +1,124 @@
+/* 전체 페이지 설정 */
+body {
+  font-family: "Apple SD Gothic Neo", sans-serif;
+  background-color: #f9f9f9;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.myinfo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 회원가입 폼 */
+.myinfo-form {
+  background: #fff;
+  padding: 24px 32px;
+  border-radius: 8px;
+  margin-top: 80px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  width: 300px;
+}
+
+/* 입력창 및 버튼 공통 스타일 */
+.myinfo-entity {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+.myinfo-email {
+  margin-top: 0px;
+  margin-left: 20px;
+  width: 100%;
+  font-size: 15px;
+  color: #444
+}
+
+/* 버튼 스타일 */
+#submitButton {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.2s;
+}
+
+#submitButton:hover {
+  background-color: #0056b3;
+}
+
+/* placeholder 스타일 */
+.myinfo-entity::placeholder {
+  color: #aaa;
+}
+
+#withdrawUser{
+  background-color: #ccc;
+  color: white;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.2s;
+
+}
+
+/* 기본 프로필 버튼 */
+#basicButton {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #007bff;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* hover 효과 */
+#basicButton:hover {
+  color: #003eb1;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal.show {
+  display: flex;
+}
+
+.modal-content {
+  background: white;
+  padding: 24px;
+  border-radius: 8px;
+  text-align: center;
+  min-width: 260px;
+}
+
+.modal-content button {
+  margin: 6px;
+  padding: 8px 16px;
+}
+
+
+/* 반응형 예시 */
+@media (max-width: 400px) {
+  .regist-form {
+    width: 90%;
+    padding: 20px;
+  }
+}

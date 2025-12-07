@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>게시물 상세보기 </title>
+        <link rel="stylesheet" href="/public/component/header/header.css" />
+        <link rel="stylesheet" href="/public/component/footer/footer.css" />
+         <link rel="stylesheet" href="/public/component/postDetail/postDetail.css" />
+         <link rel="stylesheet" href="/public/component/commentList/commentList.css" />
+        <link rel="stylesheet" href="/public/pages/post/post.css" />
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </head>
+    <body>
+        <div class = "header-container"></div>
+
+        <!-- 삭제 확인 모달 -->
+        <div class="modal" id ="post-modal">
+            <div class="modal-content">
+                <p>쪽지 떼시겠습니까?</p>
+                <button id="confirmDeletePost">떼기</button>
+                <button id="cancelDeletePost">그대로 두기</button>
+            </div>
+        </div>
+
+        <!-- 삭제 확인 모달 -->
+        <div class="modal" id ="comment-modal">
+            <div class="modal-content">
+                <p>댓글을 삭제하시겠습니까?</p>
+                <button id="confirmDeleteComment">지우기</button>
+                <button id="cancelDeleteComment">취소</button>
+            </div>
+        </div>
+
+        <div class = "post-detail-page">
+            <div id = "post-detail-container"></div>
+
+            <div class = "comment-write">
+                <input type="text" id="comment-input" maxlength="500" placeholder="댓글을 입력하세요. (최대 500글자)"/>
+                <button id="comment-submit">댓글 작성</button>
+            </div>
+
+            <div id = "comments-section"></div>
+
+            
+        </div>
+
+        <div class = "footer-container"></div>
+
+        <script type="module" src="/public/pages/post/post.js"></script>
+    </body>
+</html>

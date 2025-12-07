@@ -169,6 +169,7 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+.env
+.env_deploy
 
-#보안관련해서..
-package-lock.json
+config/config.js
